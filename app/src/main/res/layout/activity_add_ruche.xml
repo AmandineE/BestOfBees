@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/id_ruche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de la ruche (ID)"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/nom_ruche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nom de la ruche"
+        android:layout_below="@id/id_ruche"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/localisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom_ruche"
+        android:hint="Localisation"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/localisation"
+        android:hint="UID"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_enregistrer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Enregistrer"
+        android:background="#FBC02D"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+            <Button
+                android:id="@+id/button_jour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jour"
+                android:background="#BA68C8"/>
+
+                <Button
+                    android:id="@+id/button_mois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Mois"
+                    android:background="#D81B60"/>
+
+                <Button
+                    android:id="@+id/button_annee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Année"
+                    android:background="#4FC3F7"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/linear"
+                android:layout_marginTop="50dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Humidité"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graphHum"
+                android:layout_below="@id/text_hum"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:id="@+id/text_temp"
+                android:layout_below="@id/graphHum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Température"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graphTemp"
+                android:layout_below="@id/text_temp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:background="#FBC02D"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <!--<Button
+            android:id="@+id/button_compte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Mon compte"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>-->
+
+        <Button
+            android:id="@+id/button_ruches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Mes ruches"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_addRuche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Ajouter une ruche"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Mes messages"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_getData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Récupérer des données"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_deconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Déconnexion"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

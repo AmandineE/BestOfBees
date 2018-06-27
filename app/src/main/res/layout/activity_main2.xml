@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_below="@id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent">
+                </ListView>
+
+    <LinearLayout
+        android:id="@+id/linear_ruche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+    <Button
+        android:id="@+id/button_infos"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Informations"
+        android:textStyle="bold"
+        android:background="#616161"
+        />
+
+        <Button
+            android:id="@+id/button_data"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Données"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:background="#616161"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:background="#FBC02D"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <!--<Button
+            android:id="@+id/button_compte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Mon compte"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />-->
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>-->
+
+        <Button
+            android:id="@+id/button_ruches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Mes ruches"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_addRuche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Ajouter une ruche"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Mes messages"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_getData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Récupérer des données"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_deconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Déconnexion"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
